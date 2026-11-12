@@ -54,10 +54,9 @@ Only ChatGPT-generated images and the app's own screenshots: no stock photos and
 
 ## The App Store link
 
-`APP_ID` in `src/build.py` is empty because the app has no App Store record yet. Until it's set, the pages say "Coming
-soon to the App Store" (the nav button reads "Coming soon") and nothing links to the store. Once App Store Connect gives
-the app its Apple ID, set `APP_ID = "<digits>"` and rebuild: the Apple badge, "Get the app", the Smart App Banner meta
-tag, the store link in llms.txt and the JSON-LD install URL all switch on.
+`APP_ID = "6833829535"` in `src/build.py` (set Nov 12 2026, while 1.0 was in App Review): the Apple badge, "Get the
+app", the Smart App Banner meta tag, the store link in llms.txt and the JSON-LD install URL are on. Emptying `APP_ID`
+and rebuilding puts the "Coming soon to the App Store" wording back.
 
 ## Keep in step with the app
 

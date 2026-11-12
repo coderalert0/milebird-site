@@ -17,7 +17,7 @@ Milebird is a record-keeping tool, not tax advice: check the rules and rates tha
 - Car signal, Lock Screen and Siri: CarPlay, or the Bluetooth audio of a car marked as the user's, helps start and end drives. A Live Activity shows a drive in progress on the Lock Screen and in the Dynamic Island. Siri and Shortcuts can start or end a drive, sort the last drive and say this month's business miles.
 - Regions: United States (IRS rates, miles), Canada (CRA tiers, 73 cents a km for the first 5,000 km in 2026 and 67 after, kilometres), United Kingdom (HMRC 55p a mile for the first 10,000 business miles of the tax year from 6 April 2026, 25p after) and Australia (ATO 91 cents a km for 2026–27, up to 5,000 km per car, kilometres), each counted through its own tax year. Each region exports its authority's logbook (the CRA's in English or French, HMRC's, the ATO's car log and 12-week logbook): CSV free, PDF with Pro.
 - Support: email, answered by a person, usually within one business day; Email support in the Diagnostics tab fills in the Diagnostics summary and recent log.
-- Runs on iPhone with iOS 17 or later, in English and French (Canada). Coming soon to the App Store (not yet available). This site describes the app and its planned prices.
+- Runs on iPhone with iOS 17 or later, in English and French (Canada). On the App Store: https://apps.apple.com/us/app/id6833829535
 
 ## Questions and answers
 
