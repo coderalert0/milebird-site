@@ -1,0 +1,16 @@
+[
+  {"file": "1-drives.png", "title": "Every drive, logged by itself", "caption": "No monthly cap, no account. The year so far at IRS rates.",
+   "alt": "Milebird's Drives tab: tracking is on, 77.9 business miles this month worth $59.13, 2026 so far $1,603.56, and today's three drives from Home to a gym, a supplier and Acme Corp"},
+  {"file": "2-sort.png", "title": "Swipe to sort", "caption": "Business or Personal in one swipe. Mark a whole day, Undo if you slip.",
+   "alt": "A drive swiped to the right on the Drives list, showing the blue Business action"},
+  {"file": "3-reports.png", "title": "Ready for tax time", "caption": "The IRS rate for each date, including 76¢ from July 1, 2026.",
+   "alt": "Reports for 2026: 135 business drives, 2,167.2 business miles, a $1,603.57 deduction at IRS rates, split into miles at 72.5¢ before July 1 and at 76¢ after, then the export range"},
+  {"file": "4-detail.png", "title": "The route and the log line", "caption": "Each drive on a map, with its distance, times and places.",
+   "alt": "A drive's detail screen: the route on an Apple map from Home to the gym, 9.43 miles, 5:45 to 6:01 PM, 17 minutes"},
+  {"file": "5-rules.png", "title": "Rules that sort for you (Pro)", "caption": "Work hours, a home office, places and clients. Your own choice always wins.",
+   "alt": "Settings, Auto-classify: Work hours are business turned on, 9:00 AM to 5:00 PM, Monday to Friday, and Home is my main place of business turned off"},
+  {"file": "6-health.png", "title": "Speaks up when tracking can't work", "caption": "A banner and one notification for anything that stops tracking.",
+   "alt": "The Drives tab with a red banner: Drives are only logged while the app is open, with an Allow All the Time button"},
+  {"file": "7-canada.png", "title": "Canada, the UK and Australia", "caption": "Kilometres and each authority's own logbook.",
+   "alt": "Reports in Canada: 3,487.7 business kilometres, a CRA value of $2,546.02 at 73¢ up to 5,000 km and 67¢ after, and the CRA logbook as CSV or as a PDF with Pro"}
+]

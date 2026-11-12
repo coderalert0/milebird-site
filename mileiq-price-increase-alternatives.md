@@ -49,7 +49,7 @@ Prices change, and the App Store can show a different price where you live. Chec
 
 ## Where Milebird fits
 
-We make Milebird, so weigh this section accordingly. Milebird logs drives automatically with no monthly cap on the free plan, with no account, and keeps your drives on your iPhone; CSV export is free. Milebird Pro adds auto-classify rules, IRS-ready PDF and reimbursement reports, several vehicles, clients and custom rates, and iCloud sync, for $49.99 a year (14 days free for new subscribers), $6.99 a month or $119.99 once. Subscribers keep their price for as long as they stay subscribed. It runs on iPhone with iOS 17 or later and doesn't import other apps' history yet.
+We make Milebird, so weigh this section accordingly. Milebird logs drives automatically with no monthly cap on the free plan, with no account, and keeps your drives on your iPhone; CSV export is free. Milebird Pro adds auto-classify rules, IRS-ready PDF and reimbursement reports, several vehicles, clients and custom rates, and iCloud sync, for $49.99 a year (14 days free for new subscribers), $6.99 a month or $119.99 once. Subscribers keep their price for as long as they stay subscribed. It runs on iPhone with iOS 17 or later, and it can import another app's CSV export.
 
 ## Moving your records
 

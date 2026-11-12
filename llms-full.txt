@@ -6,16 +6,18 @@ Milebird is a record-keeping tool, not tax advice: check the rules and rates tha
 
 ## Key facts
 
-- Free, with no account: unlimited automatic drive detection with no monthly cap; starting or ending a drive by hand and adding a forgotten one; viewing, sorting (Business, Personal or Not a drive), editing, splitting and joining every drive; the IRS rate for each drive's date; CSV export and a backup file any time; one vehicle; tracking-health alerts and a Diagnostics screen.
+- Free, with no account: unlimited automatic drive detection with no monthly cap; starting or ending a drive by hand and adding a forgotten one; viewing, sorting (Business, Personal, Medical, Charity or Not a drive), editing, splitting and joining every drive; the IRS rate for each drive's date; the Reports tab with the year's business miles and a CSV; CSV export, CSV import from another app and a backup file any time; one vehicle; tracking-health alerts and a Diagnostics screen.
 - Milebird Pro costs $6.99 a month, $49.99 a year (new subscribers get a 14-day free trial on the yearly plan, with a reminder 2 days before it ends) or $119.99 once for Lifetime, in the US. It adds auto-classify rules (work hours, named places, the IRS commute rule), IRS-ready PDF logs and employer reimbursement reports, several vehicles with odometer readings, clients and custom rates, and iCloud sync.
 - Drives never lock: free users and anyone whose Pro ends keep every drive viewable, editable and exportable. Price promise: subscribers keep their price for as long as they stay subscribed; any price change for new buyers is announced in the app 30 days ahead.
 - Detection: the GPS is off between drives. iOS wakes Milebird through a geofence of about 150 meters around where the car parked, significant-location changes, visits and Motion & Fitness. It checks for up to 3 minutes, then records the route with GPS while you drive. Stops shorter than the stop timeout (4 minutes by default, 1 to 15 in Settings) stay in one drive. Drives from about 0.2 miles count. Walks, runs, bike rides, flights and a parked phone aren't logged; rides that look like a train, a bus or someone else's car are flagged for the user.
 - Distances come from the driven GPS track, with bad fixes filtered out. Stretches without GPS (a tunnel, a late wake-up) are drawn straight and marked as estimated.
 - IRS standard mileage rates by date: 2026 business 72.5 cents a mile from January 1 to June 30 and 76 cents from July 1, 2026 (IRS Announcement 2026-11); medical and military moving 20.5 then 23.5 cents; charity 14 cents. Each drive uses the rate for its date; the table is editable.
 - CSV columns: date, start, end, from, to, miles, category, purpose, vehicle, rate (cents a mile) and value.
-- Privacy: no account, no server, no analytics, no advertising and no third-party code. Location and motion are processed on the iPhone; drives are stored there and in the iPhone's own iCloud or computer backup. A drive's map is drawn with Apple Maps.
-- Support: email, answered by a person, usually within one business day; the Diagnostics log can be attached in one tap.
-- Runs on iPhone with iOS 17 or later, in English. Coming soon to the App Store (not yet available). This site describes the app and its planned prices.
+- Privacy: no account, no server, no analytics, no advertising and no third-party code. Location and motion are processed on the iPhone; drives are stored there and in the iPhone's own iCloud or computer backup, and, with Pro iCloud sync turned on, in the user's own private iCloud database (CloudKit). A drive's map is drawn with Apple Maps, and addresses for unnamed places come from Apple's geocoder. App Store privacy label: Data Not Collected.
+- Car signal, Lock Screen and Siri: CarPlay, or the Bluetooth audio of a car marked as the user's, helps start and end drives. A Live Activity shows a drive in progress on the Lock Screen and in the Dynamic Island. Siri and Shortcuts can start or end a drive, sort the last drive and say this month's business miles.
+- Regions: United States (IRS rates, miles), Canada (CRA tiers, 73 cents a km for the first 5,000 km in 2026 and 67 after, kilometres), United Kingdom (HMRC 55p a mile for the first 10,000 business miles of the tax year from 6 April 2026, 25p after) and Australia (ATO 91 cents a km for 2026–27, up to 5,000 km per car, kilometres), each counted through its own tax year. Each region exports its authority's logbook (the CRA's in English or French, HMRC's, the ATO's car log and 12-week logbook): CSV free, PDF with Pro.
+- Support: email, answered by a person, usually within one business day; Email support in the Diagnostics tab fills in the Diagnostics summary and recent log.
+- Runs on iPhone with iOS 17 or later, in English and French (Canada). Coming soon to the App Store (not yet available). This site describes the app and its planned prices.
 
 ## Questions and answers
 
@@ -33,7 +35,7 @@ Little between drives, because the GPS is off: iOS wakes Milebird when you move.
 
 ### Do my drives or my location leave my iPhone?
 
-No. Location and motion are processed on your iPhone, and your drives are stored there (and in your iPhone's own iCloud or computer backup). Milebird has no account, no server, no analytics and no third-party code. Maps of your drives are drawn with Apple Maps. See the privacy policy.
+Not to us. Location and motion are processed on your iPhone, and your drives are stored there (and in your iPhone's own iCloud or computer backup). With Milebird Pro you can turn on iCloud sync, which keeps them in your own private iCloud, readable only by your Apple Account. Milebird has no account, no server, no analytics and no third-party code. Maps are drawn with Apple Maps, and addresses for places you haven't named come from Apple's geocoder. See the privacy policy.
 
 ### How do I export my drives?
 
@@ -59,9 +61,17 @@ Usually not. The IRS treats driving between home and your regular place of work 
 
 Yes. GPS doesn't need a cell signal, and detection and logging happen on the iPhone with no internet. Only the street map behind a drive's route needs a connection to load.
 
-### Which iPhones does it run on?
+### Can I bring my drives from another app?
 
-iPhone with iOS 17 or later.
+Yes, from a CSV export: Settings › Your data › Import drives from another app (CSV). Milebird reads the columns by their names (date, times, from, to, miles or kilometres, purpose, category, vehicle), skips rows it can't read and tells you how many, and doesn't make duplicates.
+
+### Does it work in Canada, the UK or Australia?
+
+Yes. Choose your region in Settings › Region and rates: Canada and Australia use kilometres, and the app values business drives at the CRA's rates (73¢ a kilometre for the first 5,000 km in 2026, 67¢ after), HMRC's approved mileage allowance (55p a mile for the first 10,000 business miles from 6 April 2026, 25p after) or the ATO's cents per kilometre (91¢ for 2026–27, up to 5,000 km per car). Each exports its own logbook: the CRA's in km (in English or French), HMRC's for the tax year from 6 April, the ATO's car log and 12-week logbook. The CSV is free; the PDF comes with Pro.
+
+### Which iPhones and languages?
+
+iPhone with iOS 17 or later, in English or French.
 
 ---
 
@@ -327,7 +337,7 @@ Prices change, and the App Store can show a different price where you live. Chec
 
 ## Where Milebird fits
 
-We make Milebird, so weigh this section accordingly. Milebird logs drives automatically with no monthly cap on the free plan, with no account, and keeps your drives on your iPhone; CSV export is free. Milebird Pro adds auto-classify rules, IRS-ready PDF and reimbursement reports, several vehicles, clients and custom rates, and iCloud sync, for $49.99 a year (14 days free for new subscribers), $6.99 a month or $119.99 once. Subscribers keep their price for as long as they stay subscribed. It runs on iPhone with iOS 17 or later and doesn't import other apps' history yet.
+We make Milebird, so weigh this section accordingly. Milebird logs drives automatically with no monthly cap on the free plan, with no account, and keeps your drives on your iPhone; CSV export is free. Milebird Pro adds auto-classify rules, IRS-ready PDF and reimbursement reports, several vehicles, clients and custom rates, and iCloud sync, for $49.99 a year (14 days free for new subscribers), $6.99 a month or $119.99 once. Subscribers keep their price for as long as they stay subscribed. It runs on iPhone with iOS 17 or later, and it can import another app's CSV export.
 
 ## Moving your records
 
@@ -374,7 +384,7 @@ Of the apps compared here, TripLog's free Basic plan (its website lists unlimite
 
 Source page: https://coderalert0.github.io/milebird-site/support.html
 
-A person reads and answers every email, usually within one business day. Write to laddothis@gmail.com with what happened, your iPhone model and its iOS version. If a drive was missed or looks wrong, attach the Diagnostics log: open the Diagnostics tab, tap Share log and choose Mail. The log holds the app's own events (wake-ups, GPS modes, drives, permissions and battery levels), so we can see what happened without asking you to repeat it.
+A person reads and answers every email, usually within one business day. Write to laddothis@gmail.com with what happened, your iPhone model and its iOS version. If a drive was missed or looks wrong, the quickest way is in the app: open the Diagnostics tab and tap Email support, which opens your mail app with the Diagnostics summary and recent log already in the message. You can also tap Share log there and choose Mail. The log holds the app's own events (wake-ups, GPS modes, drives, permissions and battery levels), so we can see what happened without asking you to repeat it.
 
 ## If drives aren't being logged
 
@@ -411,7 +421,13 @@ Your drives are part of your iPhone's own backup, so restoring the new iPhone fr
 Swipe the drive, or open it and tap Delete drive. It's removed from your log and your totals. To keep it on record but out of your totals, choose Not a drive instead.
 
 ### Which mileage rate is used?
-The IRS rate in force on each drive's date, from the table in Settings › Mileage rates › IRS standard mileage rates. For 2026: 72.5 cents a mile for business through June 30, and 76 cents from July 1. You can edit the table or add a rate period.
+The IRS rate in force on each drive's date, from the table in Settings › Region and rates › IRS standard mileage rates. For 2026: 72.5 cents a mile for business through June 30, and 76 cents from July 1. You can edit the table or add a rate period.
+
+### I'm in Canada, the UK or Australia
+Choose your region in Settings › Region and rates. Canada and Australia then show kilometres, and the Drives and Reports tabs value business drives at the CRA's, HMRC's or the ATO's rates, counted through each tax year. Reports exports each authority's own logbook: as CSV free, as PDF with Pro.
+
+### How do I bring drives from another app?
+Export your history as CSV from the other app, save the file to Files, then in Milebird: Settings › Your data › Import drives from another app (CSV). Milebird reads the columns by their names, skips rows it can't read and tells you how many, and doesn't import a drive twice.
 
 ## Milebird Pro and billing
 
@@ -419,13 +435,19 @@ The IRS rate in force on each drive's date, from the table in Settings › Milea
 Milebird Pro is billed by Apple. On your iPhone: Settings › your name › Subscriptions › Milebird, then Cancel Subscription, at least 24 hours before the current period ends. Cancel at least 24 hours before a free trial ends and you won't be charged.
 
 ### How do I get a refund?
-Apple handles refunds for App Store purchases. Request one at reportaproblem.apple.com.
+Apple handles refunds for App Store purchases. In Milebird, Settings › Milebird Pro › Request a refund opens Apple's own request for your purchase; you can also go to reportaproblem.apple.com.
+
+### How does iCloud sync work?
+With Milebird Pro, turn on Settings › iCloud › iCloud sync and backup on each iPhone signed in to your Apple Account. Your drives are kept in your own private iCloud, which only your Apple Account can read, and each iPhone gets them when Milebird opens. iCloud must be on for Milebird in the iPhone's Settings › your name › iCloud.
+
+### How do I send my log to my accountant?
+Reports › Reimbursement › Send to my accountant opens Mail with the month's log as CSV (and the PDF with Milebird Pro), addressed to the accountant's email you saved in Settings › Reminders. If Mail isn't set up, the share sheet opens with the same files.
 
 ### What do I keep if Pro ends?
 Every drive. You can still see, sort, edit and export all of them. Rules stop sorting new drives, but the choices they already made stay.
 
 ### I bought Pro. How do I get it on a new iPhone?
-Purchases belong to your Apple Account. Sign in with the same Apple Account and use Restore Purchases in Milebird.
+Purchases belong to your Apple Account. Sign in with the same Apple Account and use Restore Purchases in Milebird (Settings › Milebird Pro).
 
 
 ---
@@ -434,30 +456,30 @@ Purchases belong to your Apple Account. Sign in with the same Apple Account and 
 
 Source page: https://coderalert0.github.io/milebird-site/privacy.html
 
-Effective November 11, 2026.
-Milebird is an automatic mileage log for iPhone. It's built so your drives stay yours: there's no account, no server, no analytics and no advertising, and Milebird contains no third-party code. Nothing about you or your drives is sent to us.
+Effective November 12, 2026.
+Milebird is an automatic mileage log for iPhone. It's built so your drives stay yours: there's no account, no server, no analytics and no advertising, and Milebird contains no third-party code. Nothing about you or your drives is sent to us. The only things that leave your iPhone go to Apple, as described below: map images, address lookups and, if you turn it on, your own iCloud.
 
 ## Location and motion
 To log drives automatically, Milebird uses your iPhone's location (with your permission set to Always, so drives are logged while the app is closed) and Motion & Fitness activity (whether you're walking, still or in a vehicle). Between drives the GPS is off and iOS only tells Milebird when you've moved; the GPS runs while Milebird checks a possible drive and while you drive. All of this is processed on your iPhone. Your location never leaves it.
 
 ## What stays on your iPhone
-- Your drives: each drive's start and end times, its route and distance, its stops, the places you name (such as Home or a client), the category and purpose you choose, and the IRS rate applied.
+- Your drives: each drive's start and end times, its route and distance, its stops, the places you name (such as Home or a client) and the addresses of places you haven't named, the category and purpose you choose, the vehicle and client, parking, tolls and notes you add, and the rate applied.
 - Car connection names: while a drive is recorded, the name of the car audio it's connected to over CarPlay or Bluetooth, so Milebird can tell your cars from someone else's.
 - Diagnostics: a log of the app's own events, such as when iOS woke it, how long GPS ran, permission changes and your battery level at the start and end of drives.
-- Settings: your rules, work hours, places, cars, stop settings and mileage rates.
-These are stored in Milebird's files on your iPhone and are included in your iPhone's own iCloud or computer backup and in a Quick Start transfer to a new iPhone, as Apple provides for every app's files. Milebird doesn't send them anywhere. Deleting Milebird deletes them from the iPhone.
+- Settings: your rules, work hours, places, cars and vehicles with their odometer readings, clients and their rates, stop settings, region and mileage rates, reminders, and your accountant's email address if you enter one.
+These are stored in Milebird's files on your iPhone and are included in your iPhone's own iCloud or computer backup and in a Quick Start transfer to a new iPhone, as Apple provides for every app's files. Apart from iCloud sync, if you turn it on, Milebird doesn't send them anywhere. Deleting Milebird deletes them from the iPhone.
 
-## Maps
-A drive's route is shown on a map drawn by Apple Maps (Apple's MapKit). To show the map, iOS loads map images for that area from Apple, as it does for any app with a map; Apple's own privacy policy covers that. Milebird does not send your drives or your route to Apple or anyone else.
+## Maps and addresses
+A drive's route is shown on a map drawn by Apple Maps (Apple's MapKit). To show the map, iOS loads map images for that area from Apple, as it does for any app with a map. For the start or end of a drive at a place you haven't named, Milebird asks Apple's geocoder, part of iOS, for the street address: only that point's coordinates are sent, and the address that comes back is stored with the drive on your iPhone. Apple's own privacy policy covers both. Milebird doesn't send your drives or routes to anyone for these.
 
 ## Notifications
-If you allow notifications, Milebird uses them only to tell you when tracking can't work (for example, when Location is turned off) and, with Milebird Pro's free trial, a reminder before the trial ends. They are created on your iPhone.
+If you allow notifications, Milebird uses them only to tell you when tracking can't work (for example, when Location is turned off), for a reminder before a Milebird Pro free trial ends, and, only if you turn them on in Settings › Reminders, an evening reminder to sort drives and a month-end note that your log is ready. They are created on your iPhone. The Live Activity that shows a drive in progress on the Lock Screen, and Siri and Shortcuts actions, also run on your iPhone.
 
 ## Files you share
-When you export your drives as CSV, save a backup file or share the Diagnostics log, you choose where the file goes (Mail, Messages, AirDrop, Files…). Milebird only creates the file. If you email the Diagnostics log to support, we use it only to answer you.
+When you export your drives as CSV, save a backup file or share the Diagnostics log, you choose where the file goes (Mail, Messages, AirDrop, Files…). Milebird only creates the file. When you import a CSV file or restore a backup, Milebird reads only the file you pick. Email support (in Diagnostics) opens your own mail app with a message that includes the Diagnostics summary and recent log, and Send to my accountant (in Reports) opens it with your log attached; you see each message and decide whether to send it. If you email us, we use what you send only to answer you.
 
 ## iCloud sync
-Milebird doesn't sync through iCloud today: your drives are on the iPhone that logged them. If iCloud sync is added, it will use your own private iCloud database, which only your Apple Account can read, and this policy will be updated before it ships.
+iCloud sync is part of Milebird Pro and is off until you turn it on (Settings › iCloud). When it's on, your drives and their routes are stored in your own private iCloud database (Apple's CloudKit), so every iPhone signed in to your Apple Account gets them. Only your Apple Account can read that database; we can't, and Milebird has no server of its own. Turning sync off stops it. Apple's iCloud terms and privacy policy cover iCloud storage.
 
 ## Purchases
 Milebird Pro is sold and billed by Apple. Milebird learns only whether you have Pro, never your name or payment details.
