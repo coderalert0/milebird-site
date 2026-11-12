@@ -1,0 +1,475 @@
+# Milebird
+
+> Milebird is an automatic mileage tracker for iPhone. It notices when you start driving and logs each drive by itself (date, times, where from and to, and miles), so self-employed people and employees who drive for work can mark drives Business or Personal with one tap and keep an IRS-style mileage log. Unlimited automatic tracking is free, with no account, and drives stay on the iPhone.
+
+Milebird is a record-keeping tool, not tax advice: check the rules and rates that apply to you. Milebird is not affiliated with the IRS, Apple, MileIQ, Everlance, Driversnote or TripLog. Checked on November 11, 2026. Source: https://coderalert0.github.io/milebird-site/
+
+## Key facts
+
+- Free, with no account: unlimited automatic drive detection with no monthly cap; starting or ending a drive by hand and adding a forgotten one; viewing, sorting (Business, Personal or Not a drive), editing, splitting and joining every drive; the IRS rate for each drive's date; CSV export and a backup file any time; one vehicle; tracking-health alerts and a Diagnostics screen.
+- Milebird Pro costs $6.99 a month, $49.99 a year (new subscribers get a 14-day free trial on the yearly plan, with a reminder 2 days before it ends) or $119.99 once for Lifetime, in the US. It adds auto-classify rules (work hours, named places, the IRS commute rule), IRS-ready PDF logs and employer reimbursement reports, several vehicles with odometer readings, clients and custom rates, and iCloud sync.
+- Drives never lock: free users and anyone whose Pro ends keep every drive viewable, editable and exportable. Price promise: subscribers keep their price for as long as they stay subscribed; any price change for new buyers is announced in the app 30 days ahead.
+- Detection: the GPS is off between drives. iOS wakes Milebird through a geofence of about 150 meters around where the car parked, significant-location changes, visits and Motion & Fitness. It checks for up to 3 minutes, then records the route with GPS while you drive. Stops shorter than the stop timeout (4 minutes by default, 1 to 15 in Settings) stay in one drive. Drives from about 0.2 miles count. Walks, runs, bike rides, flights and a parked phone aren't logged; rides that look like a train, a bus or someone else's car are flagged for the user.
+- Distances come from the driven GPS track, with bad fixes filtered out. Stretches without GPS (a tunnel, a late wake-up) are drawn straight and marked as estimated.
+- IRS standard mileage rates by date: 2026 business 72.5 cents a mile from January 1 to June 30 and 76 cents from July 1, 2026 (IRS Announcement 2026-11); medical and military moving 20.5 then 23.5 cents; charity 14 cents. Each drive uses the rate for its date; the table is editable.
+- CSV columns: date, start, end, from, to, miles, category, purpose, vehicle, rate (cents a mile) and value.
+- Privacy: no account, no server, no analytics, no advertising and no third-party code. Location and motion are processed on the iPhone; drives are stored there and in the iPhone's own iCloud or computer backup. A drive's map is drawn with Apple Maps.
+- Support: email, answered by a person, usually within one business day; the Diagnostics log can be attached in one tap.
+- Runs on iPhone with iOS 17 or later, in English. Coming soon to the App Store (not yet available). This site describes the app and its planned prices.
+
+## Questions and answers
+
+### Is Milebird free?
+
+Yes. Automatic tracking is free with no monthly cap: every drive is logged, and you can view, sort, edit and export every one as CSV, with no account. Milebird Pro adds auto-classify rules, IRS-ready PDF and reimbursement reports, several vehicles with odometer readings, clients and custom rates, and iCloud sync, for $6.99 a month, $49.99 a year (14 days free for new subscribers) or $119.99 once, in the US.
+
+### Which IRS mileage rate does Milebird use?
+
+The rate in force on the date of each drive. For 2026 the IRS set the business rate at 72.5 cents a mile from January 1 and raised it to 76 cents for miles driven from July 1, 2026 (medical and moving: 20.5 cents, then 23.5; charity: 14 cents all year). So a drive on June 30 is valued at 72.5¢ and one on July 1 at 76¢. You can edit the table, or add a rate when the IRS announces a new one.
+
+### How much battery does it use?
+
+Little between drives, because the GPS is off: iOS wakes Milebird when you move. GPS runs while Milebird checks a possible drive, while you drive and at stops during a drive. Diagnostics shows the GPS time for each day and the app's own estimate (about 4% of a battery per hour of driving), with the measured battery level at the start and end of each drive.
+
+### Do my drives or my location leave my iPhone?
+
+No. Location and motion are processed on your iPhone, and your drives are stored there (and in your iPhone's own iCloud or computer backup). Milebird has no account, no server, no analytics and no third-party code. Maps of your drives are drawn with Apple Maps. See the privacy policy.
+
+### How do I export my drives?
+
+Settings › Your data › Export all drives (CSV) gives you every drive with its date, start and end times, from, to, miles, category, purpose, vehicle, rate and value. Send it to Mail, Files or your accountant. You can also save a backup file there and restore it on any iPhone. Both are free, always.
+
+### How do I cancel Milebird Pro?
+
+Pro is billed by Apple. On your iPhone go to Settings › your name › Subscriptions › Milebird and cancel at least 24 hours before the current period ends. You keep every drive, and you can still export them all.
+
+### Do I need an account?
+
+No. There's nothing to sign up for, so there's nothing to get logged out of. Open the app, allow Location and Motion & Fitness, and drive.
+
+### What if I ride as a passenger or take the train?
+
+Rides that look like a train or a bus, and rides in a car that isn't one of yours (Milebird tells your cars apart by their CarPlay or Bluetooth connection, once you mark them in Settings › My cars), are flagged for you. Keep the drive, or tap Not a drive to keep it out of your totals.
+
+### Are drives between home and work business miles?
+
+Usually not. The IRS treats driving between home and your regular place of work as personal commuting, however far it is. Milebird's rules follow that, unless you tell it your home is your main place of business. See what an IRS mileage log must show.
+
+### Does it work with no cell signal?
+
+Yes. GPS doesn't need a cell signal, and detection and logging happen on the iPhone with no internet. Only the street map behind a drive's route needs a connection to load.
+
+### Which iPhones does it run on?
+
+iPhone with iOS 17 or later.
+
+---
+
+# IRS mileage log requirements: what your log must show
+
+> For each business drive, record the date, your business destination, the business purpose and the miles, plus the total miles you drove the car in the year. Write it down at or near the time (a weekly log counts), on paper or on a computer, and keep it for at least 3 years after you file. Driving between home and your regular workplace is commuting, which is personal.
+
+Source page: https://coderalert0.github.io/milebird-site/irs-mileage-log-requirements.html
+Checked against its sources on November 11, 2026. Published by Milebird, an automatic mileage tracker for iPhone. Not tax advice.
+
+## What each business drive needs
+
+IRS Publication 463 lists what your records must show for car expenses (Table 5-1, "How To Prove Certain Business Expenses"):
+
+| Element | What to record for a car |
+|---|---|
+| Amount | The cost of the car and any improvements, the date you started using it for business, the mileage for each business use, and the total miles for the year |
+| Time | The date of each use of the car |
+| Place | Your business destination |
+| Business purpose | The business purpose of the drive |
+
+The publication is blunt about guesses: "You can't deduct amounts that you approximate or estimate."
+
+A log line that covers every element for one drive looks like this:
+
+`2026-11-10 · Home → Client office, 120 Main St · 12.4 mi · Business: site visit`
+
+## Paper or app: both count
+
+You can keep the record "in an account book, diary, log, statement of expense, trip sheets, or similar record." It generally has to be written, because written evidence is more reliable than memory, and Publication 463 says that "if you prepare a record on a computer, it is considered an adequate record." A mileage app's log is a computer record.
+
+## Write it down at or near the time
+
+The IRS asks you to record each business use "at or near the time" and explains why: "A timely kept record has more value than a statement prepared later when there is generally a lack of accurate recall."
+
+You don't have to write every drive down the same day. Publication 463 says that if you keep a log on a weekly basis that accounts for use during the week, the log counts as a timely kept record. A log rebuilt from memory at tax time is exactly what this rule is meant to avoid.
+
+## When the purpose is obvious
+
+You must generally write down the business purpose, but not when it's clear from the circumstances. Publication 463's example is a sales representative on an established sales route: they can record the length of the route once, the date of each trip at or near the time, and the total miles driven that year.
+
+Several uses of the car that are really one, such as a round trip or a delivery route, can go in a single record. A short personal stop, such as lunch between two business stops, doesn't interrupt the business use.
+
+## Logging part of the year (sampling)
+
+You can keep an adequate record for parts of the year and use it to prove your business use for the whole year, if you can show with other evidence that those periods are representative. The publication's example: a log kept for the first week of every month shows 75% business use, and invoices show the same pattern in the other weeks.
+
+## Commuting doesn't count
+
+Publication 463: "You can't deduct commuting expenses no matter how far your home is from your regular place of work. You can't deduct commuting expenses even if you work during the commuting trip." Taking business calls or talking business with a passenger doesn't change that.
+
+The exceptions it lists:
+
+- **Temporary work location.** If you have one or more regular work locations away from home, you can deduct the round trip between home and a temporary work location in the same trade or business, regardless of distance. A temporary work location is one where the work is realistically expected to last, and does last, one year or less. If you have no regular place of business, only temporary work locations outside your metropolitan area qualify.
+- **Home office.** If your home office qualifies as your principal place of business, you can deduct trips between home and another work location in the same trade or business.
+- **No regular office and no home office.** Your first business contact of the day inside your metropolitan area counts as your office: the drive from home to it, and from the last contact back home, is commuting. Driving from one client or customer to another is deductible.
+
+Parking at your own workplace is a commuting cost. Business-related parking fees and tolls can be deducted on top of the standard mileage rate.
+
+## What Schedule C asks about your car
+
+If you're self-employed and claim car expenses on Schedule C (Form 1040) without filing Form 4562, Part IV asks:
+
+- When you placed the vehicle in service for business (line 43).
+- Of the total miles you drove it that year, how many were business, commuting and other (line 44).
+- Whether it was available for personal use off duty, and whether you have another vehicle for personal use (lines 45 and 46).
+- Whether you have evidence to support the deduction, and whether that evidence is written (lines 47a and 47b).
+
+A log that records personal drives as well as business ones, and the car's total miles for the year, answers line 44 directly.
+
+## Standard mileage rates by date
+
+The IRS changed its rates in the middle of 2026, so the rate depends on the date of each drive:
+
+| Miles driven | Business | Medical and military moving | Charity | IRS source |
+|---|---|---|---|---|
+| 2025 | 70¢ | 21¢ | 14¢ | IR-2024-312 |
+| January 1 to June 30, 2026 | 72.5¢ | 20.5¢ | 14¢ | IR-2025-128 |
+| From July 1, 2026 | 76¢ | 23.5¢ | 14¢ | Announcement 2026-11 |
+
+Announcement 2026-11, in Internal Revenue Bulletin 2026-29, raised the rates for miles driven on or after July 1, 2026 and gives the reason: "This modification results from recent increases in the price of fuel." The charity rate is set by law, which is why it stayed at 14¢. So 1,000 business miles driven in June 2026 are worth $725, and 1,000 driven in July $760.
+
+Rules that come with the standard mileage rate, from Publication 463:
+
+- For a car you own, you must choose the standard mileage rate in the first year the car is available for use in your business. In later years you can use either method. For a leased car, you must use it for the whole lease.
+- You can't use it if you use five or more cars at the same time (as in fleet operations), or after claiming certain depreciation on the car (for example MACRS, a section 179 deduction or the special depreciation allowance).
+- If you use the standard mileage rate for a year, you can't also deduct that year's actual car expenses, such as depreciation, lease payments, gas, oil, repairs, insurance or registration.
+- Business parking fees and tolls are deductible in addition.
+
+## How long to keep the log
+
+Keep records that support a deduction for as long as they may be needed, which generally means 3 years from the date you file the return that claims it (a return filed early counts as filed on its due date). If you depreciate the car, keep the records of its business use for each year of the recovery period. Publication 583 explains record retention in more detail.
+
+## Frequently asked questions
+
+### What does the IRS require in a mileage log?
+
+For each business use of the car: the date, your business destination, the business purpose and the miles. You also need the car's total miles for the year and the date you started using it for business. IRS Publication 463, Table 5-1, lists these elements.
+
+### Is a mileage tracking app acceptable to the IRS?
+
+IRS Publication 463 says a record prepared on a computer is considered an adequate record. What matters is that the log shows every required element and was kept at or near the time of each drive.
+
+### Can I reconstruct a mileage log at the end of the year?
+
+The IRS gives more weight to a record kept at or near the time than to one prepared later, and you can't deduct amounts you approximate or estimate. If your records are incomplete, you must back an element up with your own specific statement plus other supporting evidence. A weekly log counts as timely.
+
+### Are drives from home to work deductible?
+
+Not when they're between home and your main or regular place of work: the IRS treats those as personal commuting, however far the drive. Exceptions include trips to a temporary work location, and trips from a home office that's your principal place of business to another work location.
+
+### What is the IRS mileage rate for the second half of 2026?
+
+76 cents a mile for business, 23.5 cents for medical and military moving, and 14 cents for charity, for miles driven from July 1, 2026 (IRS Announcement 2026-11). From January 1 to June 30, 2026 the business rate was 72.5 cents.
+
+### How long should I keep my mileage log?
+
+Generally 3 years from the date you file the return that claims the deduction, and longer if you depreciate the car: then keep the business-use records for each year of its recovery period.
+
+## Sources
+
+- [IRS Publication 463 (2025), Travel, Gift, and Car Expenses](https://www.irs.gov/publications/p463)
+- [IRS: Standard mileage rates](https://www.irs.gov/tax-professionals/standard-mileage-rates)
+- [IR-2025-128: IRS sets 2026 business standard mileage rate at 72.5 cents per mile](https://www.irs.gov/newsroom/irs-sets-2026-business-standard-mileage-rate-at-725-cents-per-mile-up-25-cents)
+- [Internal Revenue Bulletin 2026-29 (Announcement 2026-11, Optional Standard Mileage Rates)](https://www.irs.gov/irb/2026-29_irb)
+- [Schedule C (Form 1040), Profit or Loss From Business](https://www.irs.gov/pub/irs-pdf/f1040sc.pdf)
+- [IRS Publication 583, Starting a Business and Keeping Records](https://www.irs.gov/publications/p583)
+
+
+---
+
+# How to track mileage for taxes automatically on iPhone
+
+> Use a mileage app that detects drives in the background, and give it Location set to Always with Precise Location on, plus Motion & Fitness and Background App Refresh. Leave it running, then once a week mark each drive business or personal and add the business purpose, so your log is kept at or near the time, as the IRS expects.
+
+Source page: https://coderalert0.github.io/milebird-site/how-to-track-mileage-automatically.html
+Checked against its sources on November 11, 2026. Published by Milebird, an automatic mileage tracker for iPhone. Not tax advice.
+
+## Why automatic beats remembering
+
+The IRS asks you to record each business use of your car "at or near the time," and it won't accept miles you "approximate or estimate" ([IRS Publication 463](https://www.irs.gov/publications/p463)). A weekly log counts as timely; a year's drives pieced together in April from memory and a map does not hold up as well.
+
+An automatic tracker writes the parts that are hard to remember (the date, where each drive started and ended, and the miles) as you drive. What's left for you is the part only you know: whether the drive was for business, and why. See [what an IRS mileage log must show](https://coderalert0.github.io/milebird-site/irs-mileage-log-requirements.md).
+
+## How an iPhone knows you're driving
+
+A mileage app can't keep the GPS on all day without draining the battery, so a well-made tracker works in two modes:
+
+- **Between drives,** it asks iOS to wake it when you've moved, for example when you leave a place you've stopped at, and it reads the iPhone's motion activity (walking, still, or in a vehicle) from Motion & Fitness. The GPS stays off.
+- **During a drive,** it turns the GPS on and records the route, so the miles come from the road you actually drove.
+
+That only works if the app is allowed to use your location in the background. iOS asks for that permission separately, and once you've allowed it, Apple explains, "your device will remind you from time to time that an app is using your location," shows those locations on a map and asks whether to keep allowing it. If you want drives logged with the app closed, keep allowing it.
+
+## The settings that keep it logging
+
+| Setting | Where on the iPhone | Why it matters |
+|---|---|---|
+| Location: **Always** | Settings › Privacy & Security › Location Services › the app | With While Using, drives are logged only while the app is open |
+| **Precise Location** on | The same screen | Turned off, the app gets only your approximate location, which is too coarse to measure a drive's miles |
+| **Motion & Fitness** on | Settings › Privacy & Security › Motion & Fitness | Tells walking from driving, so drives start and end at the right moment |
+| **Background App Refresh** on | Settings › General › Background App Refresh | Lets iOS run the app in the background |
+| **Low Power Mode** off, when you can | Settings › Battery | Apple lists it as turning off Background App Refresh, among other things |
+
+Two habits matter as much as the switches:
+
+- **Don't force-quit the app.** Swiping a tracker away in the app switcher stops it, which can cut off a drive in progress. There's no battery to save by closing it.
+- **Open it now and then.** A good tracker tells you on screen when a permission is off; you'll only see that if you look.
+
+## A weekly five-minute routine
+
+1. **Sort the week's drives.** Mark each one business or personal, and add a short business purpose ("site visit, Acme", "client meeting"). Publication 463 counts a log kept weekly as timely.
+2. **Check what the app flagged.** Train rides, rides as a passenger and anything that doesn't look like your driving should be marked as not a drive.
+3. **Look for gaps.** Compare against your calendar. If a business drive is missing, add it now, while you remember it, rather than at tax time.
+4. **Keep commuting out.** Driving between home and your regular workplace is personal commuting, even if you take work calls on the way. See [the commuting rules](https://coderalert0.github.io/milebird-site/irs-mileage-log-requirements.md).
+5. **Export a copy now and then.** Save a CSV or the app's report somewhere other than the phone, such as iCloud Drive or your email.
+
+## Check the rate by date
+
+The IRS raised its rates in the middle of 2026: business miles driven from January 1 to June 30, 2026 are worth 72.5 cents each, and miles from July 1, 2026 are worth 76 cents ([IRS standard mileage rates](https://www.irs.gov/tax-professionals/standard-mileage-rates)). A tracker should value each drive at the rate in force on its date, not apply one rate to the whole year.
+
+## At year end
+
+- **Total miles for the year.** The IRS wants the car's total miles, not just the business ones, and Schedule C asks you to split them into business, commuting and other. An odometer reading at the start and end of the year gives you the total.
+- **Export the full log** with every drive's date, places, miles and purpose, and keep it with your tax records for at least 3 years after you file.
+
+## Frequently asked questions
+
+### Do mileage tracking apps drain the battery?
+
+It depends on how they use the GPS. A tracker that keeps GPS on all day uses far more power than one that waits for iOS to wake it when you move and runs GPS only while you drive. Settings › Battery on your iPhone shows how much each app has used.
+
+### Why does my iPhone keep asking whether to allow location in the background?
+
+iOS reminds you from time to time when an app uses your location in the background, shows where it was used, and asks whether to keep allowing it. A mileage tracker needs that permission to log drives with the app closed, so choose to keep allowing it.
+
+### Does Low Power Mode stop mileage tracking?
+
+Apple says Low Power Mode turns off Background App Refresh, among other things. How much that affects a tracker depends on the app: some keep logging but may notice the start of a drive later. Turn Low Power Mode off when you can, and check the app if drives seem to be missing.
+
+### Is an app's log good enough for the IRS?
+
+IRS Publication 463 says a record prepared on a computer is considered an adequate record. The log still has to show each business drive's date, destination, purpose and miles, and be kept at or near the time.
+
+## Sources
+
+- [IRS Publication 463 (2025), Travel, Gift, and Car Expenses](https://www.irs.gov/publications/p463)
+- [IRS: Standard mileage rates](https://www.irs.gov/tax-professionals/standard-mileage-rates)
+- [Apple: Control the location information you share on iPhone](https://support.apple.com/guide/iphone/control-the-location-information-you-share-iph3dd5f9be/ios)
+- [Apple: About privacy and Location Services in iOS, iPadOS, and watchOS](https://support.apple.com/en-us/102515)
+- [Apple: Use Low Power Mode to save battery life on your iPhone or iPad](https://support.apple.com/en-us/101604)
+
+
+---
+
+# MileIQ's 2026 price increase and the alternatives
+
+> In 2026 MileIQ's US list price went from $8.99 to $13.99 a month and from $89.99 to $139.99 a year, and its free plan is 40 drives a month. On November 11, 2026, the US App Store listed Everlance at $89.99 or $119.99 a year and Driversnote at $150 a year, and TripLog's website listed Premium at $59.99 a year. Milebird, which we make, has unlimited automatic tracking free and Pro at $49.99 a year.
+
+Source page: https://coderalert0.github.io/milebird-site/mileiq-price-increase-alternatives.html
+Checked against its sources on November 11, 2026. Published by Milebird, an automatic mileage tracker for iPhone. Not tax advice.
+
+## What changed at MileIQ
+
+MileIQ's Unlimited plan went up in 2026. PricingSaaS, which tracks companies' pricing pages, recorded the increase in its second-quarter 2026 snapshot (detected July 3, 2026):
+
+| MileIQ Unlimited | Before | After |
+|---|---|---|
+| Billed monthly | $8.99 a month | $13.99 a month |
+| Billed yearly | $7.50 a month ($89.99 a year) | $11.66 a month ($139.99 a year) |
+
+On November 11, 2026, MileIQ's pricing page showed the same prices, and its US App Store listing offered in-app purchases at $13.99 (monthly) and $139.99 (yearly). The free plan is 40 drives a month, with automatic tracking and reports. On the App Store, MileIQ is published by Bending Spoons US Inc.
+
+## What the main alternatives cost
+
+Prices on the US App Store on November 11, 2026, with each free plan as the app's own website described it that day:
+
+| App | Monthly | Yearly | Free plan |
+|---|---|---|---|
+| MileIQ | $13.99 | $139.99 | 40 drives a month |
+| Everlance Starter | $10.99 | $89.99 | 30 automatically detected trips a month per user; manual trips unlimited |
+| Everlance Professional | $19.99 | $119.99 | (same free plan) |
+| Driversnote | $14.00 | $150.00 ($167.99 with an iBeacon) | 15 trips a month |
+| TripLog Premium | $4.99 a month, paid annually (website) | $59.99 | Unlimited automatic GPS tracking; reports through a free 7-day pass once a calendar year, from January 1 |
+| Milebird Pro (ours) | $6.99 | $49.99 (or $119.99 once) | Unlimited automatic drives; CSV export any time |
+
+Notes from the same pages:
+
+- **Everlance**'s pricing page shows two sets of prices: the ones above, and an older set with Starter at $8.99 a month or $69.99 a year and Professional at $99.99 a year. Every plan has a 7-day free trial, and Starter's trial needs a credit card. The page says "all sales are non-refundable."
+- **Driversnote**'s website lists Pro at $11 a month, below its App Store price. Its iBeacon is free with a yearly plan and $40 otherwise.
+- **TripLog** sells optional hardware: TripLog Drive at $79.99 and a Beacon at $19.99. Its App Store listing shows older "legacy" packages at $59.99.
+
+Prices change, and the App Store can show a different price where you live. Check each app's App Store page before you decide.
+
+## What to compare besides the price
+
+- **The free plan's limit.** A monthly cap on drives or trips, or none.
+- **What happens to drives you've logged** if you stop paying: can you still see and export them?
+- **Export.** Which formats (CSV, PDF), and whether you can export any time or only on a paid plan.
+- **The mileage rate.** The IRS raised the business rate from 72.5 to 76 cents a mile for miles driven from July 1, 2026; check that the app values each drive at the rate for its date.
+- **Accounts and data.** Whether you need an account, and where your drives are stored.
+- **Trials and cancelling.** The trial's length, whether it needs a card, whether you get a reminder before it converts, and how you cancel.
+- **Support.** How you reach a person when a drive goes missing.
+
+## Where Milebird fits
+
+We make Milebird, so weigh this section accordingly. Milebird logs drives automatically with no monthly cap on the free plan, with no account, and keeps your drives on your iPhone; CSV export is free. Milebird Pro adds auto-classify rules, IRS-ready PDF and reimbursement reports, several vehicles, clients and custom rates, and iCloud sync, for $49.99 a year (14 days free for new subscribers), $6.99 a month or $119.99 once. Subscribers keep their price for as long as they stay subscribed. It runs on iPhone with iOS 17 or later and doesn't import other apps' history yet.
+
+## Moving your records
+
+1. **Export first.** Before you cancel any mileage app, download the reports or files for every year you may need. The IRS generally expects records that support a deduction to be kept for 3 years after you file ([IRS Publication 463](https://www.irs.gov/publications/p463)).
+2. **Start the new app before you cancel the old one.** Running both for a week shows you whether the new one catches your drives.
+3. **Cancel where you pay.** If you subscribed through Apple, cancel in Settings › your name › Subscriptions. If you paid on the company's website, cancel there.
+
+## Frequently asked questions
+
+### How much does MileIQ cost in 2026?
+
+On November 11, 2026, MileIQ Unlimited cost $13.99 a month or $139.99 a year in the US ($11.66 a month billed yearly on its website). The free plan includes 40 drives a month.
+
+### When did MileIQ raise its price?
+
+PricingSaaS recorded the increase from $8.99 to $13.99 a month, and from $7.50 to $11.66 a month billed yearly, in its second-quarter 2026 snapshot, detected July 3, 2026.
+
+### Does MileIQ have a free plan?
+
+Yes: 40 drives a month, with automatic tracking and reports, according to MileIQ's pricing page on November 11, 2026.
+
+### Which of these apps have unlimited free automatic tracking?
+
+Of the apps compared here, TripLog's free Basic plan (its website lists unlimited automatic GPS tracking, with reports through a 7-day pass once a year) and Milebird's free plan (unlimited automatic drives, CSV export any time). MileIQ's free plan is capped at 40 drives a month, Everlance's at 30 automatic trips a month and Driversnote's at 15 trips a month.
+
+## Sources
+
+- [MileIQ: Pricing](https://mileiq.com/pricing)
+- [PricingSaaS: MileIQ pricing history](https://www.pricingsaas.com/companies/mileiq)
+- [MileIQ on the US App Store](https://apps.apple.com/us/app/id578830929)
+- [Everlance: Pricing](https://www.everlance.com/pricing)
+- [Everlance on the US App Store](https://apps.apple.com/us/app/id985378916)
+- [Driversnote: Pricing](https://www.driversnote.com/pricing)
+- [Driversnote on the US App Store](https://apps.apple.com/us/app/id924418916)
+- [TripLog: Pricing](https://triplog.net/pricing)
+- [TripLog on the US App Store](https://apps.apple.com/us/app/id585918522)
+- [IRS: Standard mileage rates](https://www.irs.gov/tax-professionals/standard-mileage-rates)
+- [IRS Publication 463 (2025), Travel, Gift, and Car Expenses](https://www.irs.gov/publications/p463)
+
+
+---
+
+# Milebird support
+
+Source page: https://coderalert0.github.io/milebird-site/support.html
+
+A person reads and answers every email, usually within one business day. Write to laddothis@gmail.com with what happened, your iPhone model and its iOS version. If a drive was missed or looks wrong, attach the Diagnostics log: open the Diagnostics tab, tap Share log and choose Mail. The log holds the app's own events (wake-ups, GPS modes, drives, permissions and battery levels), so we can see what happened without asking you to repeat it.
+
+## If drives aren't being logged
+
+### Check Milebird's permissions
+Open the iPhone's Settings, then Apps › Milebird (on iOS 17, scroll down to Milebird), and check four things: Location is set to Always; Precise Location is on; Motion & Fitness is on; Background App Refresh is on. With Location set to While Using, drives are logged only while Milebird is open, and approximate location can't measure miles. Milebird's Diagnostics tab lists each permission, and a red banner on the Drives tab names anything that's off. Notifications are optional: Milebird only uses them to tell you when tracking can't work.
+
+### Low Power Mode is on
+Apple says Low Power Mode turns off Background App Refresh, among other things. Milebird keeps logging drives, but iOS may wake it a little later, so the start of a drive can be caught late; the stretch it missed is drawn from where you parked and marked as estimated. Diagnostics notes when Low Power Mode is on. To turn it off: Settings › Battery (on iPhone 15 and later, Settings › Battery › Power Mode).
+
+### Don't force-quit Milebird
+There's no need to close Milebird: between drives the GPS is off and iOS wakes the app when you move. Swiping it away in the app switcher stops the app, which can cut the GPS off in the middle of a drive and delay the next one until iOS wakes Milebird again. Leave it in the app switcher. If you did swipe it away, open it once.
+
+### Tracking is paused
+A banner on the Drives tab shows a pause, with a Resume button. A pause for an hour or until tomorrow ends by itself; Until I resume lasts until you tap Resume or turn off Pause tracking in Settings › Tracking.
+
+### A drive is missing
+Open Diagnostics to see when iOS last woke Milebird and what it saw, and check the permissions above. To add the drive yourself: on the Drives tab, tap + › Add a drive by hand. You can also tap + › Start a drive now before you set off, and End this drive now when you arrive.
+
+### A drive was split at a stop, or two drives were joined
+Open the drive: Split cuts it at any of its stops, and Join with the drive before puts two back together. To change what happens next time, use Settings › Tracking: End a drive after stopping (1 to 15 minutes, 4 by default) and Join drives with stops under (for deliveries and site visits; each stop is still listed).
+
+### A train ride or someone else's car was logged
+Tap Not a drive. It's kept on record but left out of your totals. Rides that look like a train or a bus, and rides in a car that isn't one of yours, are flagged for you to check; mark your own cars in Settings › My cars so Milebird can tell them apart by CarPlay or Bluetooth.
+
+## Your drives and files
+
+### How do I export my drives?
+Settings › Your data › Export all drives (CSV). The file has one row per drive: date, start and end times, from, to, miles, category, purpose, vehicle, rate (cents a mile) and value. Send it with Mail or AirDrop, or save it to Files. It's free, any time, for every drive.
+
+### How do I move to a new iPhone?
+Your drives are part of your iPhone's own backup, so restoring the new iPhone from an iCloud or computer backup, or moving with Quick Start, brings them along. You can also save a file yourself: Settings › Your data › Save a backup file, then on the new iPhone Settings › Your data › Restore from a backup file. Restoring merges drives without making duplicates.
+
+### How do I delete a drive?
+Swipe the drive, or open it and tap Delete drive. It's removed from your log and your totals. To keep it on record but out of your totals, choose Not a drive instead.
+
+### Which mileage rate is used?
+The IRS rate in force on each drive's date, from the table in Settings › Mileage rates › IRS standard mileage rates. For 2026: 72.5 cents a mile for business through June 30, and 76 cents from July 1. You can edit the table or add a rate period.
+
+## Milebird Pro and billing
+
+### How do I cancel?
+Milebird Pro is billed by Apple. On your iPhone: Settings › your name › Subscriptions › Milebird, then Cancel Subscription, at least 24 hours before the current period ends. Cancel at least 24 hours before a free trial ends and you won't be charged.
+
+### How do I get a refund?
+Apple handles refunds for App Store purchases. Request one at reportaproblem.apple.com.
+
+### What do I keep if Pro ends?
+Every drive. You can still see, sort, edit and export all of them. Rules stop sorting new drives, but the choices they already made stay.
+
+### I bought Pro. How do I get it on a new iPhone?
+Purchases belong to your Apple Account. Sign in with the same Apple Account and use Restore Purchases in Milebird.
+
+
+---
+
+# Milebird privacy policy
+
+Source page: https://coderalert0.github.io/milebird-site/privacy.html
+
+Effective November 11, 2026.
+Milebird is an automatic mileage log for iPhone. It's built so your drives stay yours: there's no account, no server, no analytics and no advertising, and Milebird contains no third-party code. Nothing about you or your drives is sent to us.
+
+## Location and motion
+To log drives automatically, Milebird uses your iPhone's location (with your permission set to Always, so drives are logged while the app is closed) and Motion & Fitness activity (whether you're walking, still or in a vehicle). Between drives the GPS is off and iOS only tells Milebird when you've moved; the GPS runs while Milebird checks a possible drive and while you drive. All of this is processed on your iPhone. Your location never leaves it.
+
+## What stays on your iPhone
+- Your drives: each drive's start and end times, its route and distance, its stops, the places you name (such as Home or a client), the category and purpose you choose, and the IRS rate applied.
+- Car connection names: while a drive is recorded, the name of the car audio it's connected to over CarPlay or Bluetooth, so Milebird can tell your cars from someone else's.
+- Diagnostics: a log of the app's own events, such as when iOS woke it, how long GPS ran, permission changes and your battery level at the start and end of drives.
+- Settings: your rules, work hours, places, cars, stop settings and mileage rates.
+These are stored in Milebird's files on your iPhone and are included in your iPhone's own iCloud or computer backup and in a Quick Start transfer to a new iPhone, as Apple provides for every app's files. Milebird doesn't send them anywhere. Deleting Milebird deletes them from the iPhone.
+
+## Maps
+A drive's route is shown on a map drawn by Apple Maps (Apple's MapKit). To show the map, iOS loads map images for that area from Apple, as it does for any app with a map; Apple's own privacy policy covers that. Milebird does not send your drives or your route to Apple or anyone else.
+
+## Notifications
+If you allow notifications, Milebird uses them only to tell you when tracking can't work (for example, when Location is turned off) and, with Milebird Pro's free trial, a reminder before the trial ends. They are created on your iPhone.
+
+## Files you share
+When you export your drives as CSV, save a backup file or share the Diagnostics log, you choose where the file goes (Mail, Messages, AirDrop, Files…). Milebird only creates the file. If you email the Diagnostics log to support, we use it only to answer you.
+
+## iCloud sync
+Milebird doesn't sync through iCloud today: your drives are on the iPhone that logged them. If iCloud sync is added, it will use your own private iCloud database, which only your Apple Account can read, and this policy will be updated before it ships.
+
+## Purchases
+Milebird Pro is sold and billed by Apple. Milebird learns only whether you have Pro, never your name or payment details.
+
+## What is not collected
+No account, no contact details, no identifiers, no analytics, no advertising, no tracking, and no data sold or shared with anyone. Milebird's privacy manifest declares that it collects no data and doesn't track you.
+
+## Children
+Milebird is a tool for drivers and isn't directed to children. It collects no personal information from anyone.
+
+## Changes
+If this policy changes, the new version will be posted on this page with a new date.
+
+## Contact
+Questions about this policy: laddothis@gmail.com

@@ -1,0 +1,135 @@
+<section class="hero">
+  <div>
+    {HERO_ICON}
+    <span class="eyebrow">Automatic mileage tracker for iPhone</span>
+    <h1>Every drive logged, <em>without lifting a finger.</em></h1>
+    <p class="lead">Milebird notices when you start driving and logs the drive by itself: when, from where to where, and how many miles. Sort it as Business or Personal with one tap. There's no account to make, and your drives stay on your iPhone.</p>
+    <div class="actions" id="get">
+      {GET}
+      <a class="btn btn-ghost" href="#detection">How it works</a>
+    </div>
+    <div class="facts"><span>Unlimited automatic tracking, free</span><span>No monthly drive cap</span><span>No account</span><span>Drives stay on your iPhone</span><span>Answered by a person</span></div>
+  </div>
+  <figure class="logcard">
+    <p class="day">Tuesday, November 10 <span>3 drives</span></p>
+    <ol>
+      <li><span class="t">8:02 – 8:31 AM</span><span class="m">12.4 mi</span><span class="p">Home → Client office</span><span class="tag biz">BUSINESS</span></li>
+      <li><span class="t">12:15 – 12:24 PM</span><span class="m">3.1 mi</span><span class="p">Client office → Café</span><span class="tag">PERSONAL</span></li>
+      <li><span class="t">1:05 – 1:40 PM</span><span class="m">15.8 mi</span><span class="p">Café → Supplier</span><span class="tag">UNSORTED</span><span class="p choose-note">One tap: Business or Personal</span></li>
+    </ol>
+    <p class="sum"><span>November so far, business</span><strong>412.6 mi · $313.58</strong></p>
+    <p class="irs">2026-11-10 08:02–08:31 · Home → Client office · 12.4 mi · Business: site visit · 76¢/mi = $9.42</p>
+    <figcaption>An example day, to show how drives look in Milebird's log. The last line is a drive's IRS log entry.</figcaption>
+  </figure>
+</section>
+
+<section class="wrap" id="how">
+  <h2>What Milebird does</h2>
+  <div class="grid">
+    <div class="card"><h3><span class="dot"></span>Logs every drive by itself</h3><p>Drive, park, and the trip appears in your list a few minutes later. No need to open the app or press start. Drives from 0.2 miles count. You can still start or end a drive by hand, or add one you forgot.</p></div>
+    <div class="card"><h3><span class="dot"></span>One tap to sort</h3><p>Business or Personal right on the row, or swipe. Mark a whole day at once, and Undo if you slip. Milebird never sends notifications asking you to classify drives.</p></div>
+    <div class="card"><h3><span class="dot"></span>Stops handled sensibly</h3><p>Red lights, drive-throughs and a traffic jam don't split a drive; its stops are listed inside it. Doing deliveries or site visits? Join drives with short stops into one log line, or split a drive at any stop.</p></div>
+    <div class="card"><h3><span class="dot"></span>The IRS rate for each date</h3><p>Every drive is valued at the IRS rate in force on its date, including the July 1, 2026 rise from 72.5¢ to 76¢ a mile. The rate table is yours to edit. <a href="irs-mileage-log-requirements.html">What a mileage log must show</a>.</p></div>
+    <div class="card"><h3><span class="dot amber"></span>Speaks up when tracking can't work</h3><p>If Location, Precise Location, Motion &amp; Fitness or Background App Refresh is off, Milebird shows a red banner and sends one notification per problem, and it checks again every day. A pause always ends when you said it would.</p></div>
+    <div class="card"><h3><span class="dot"></span>Not every trip is a drive</h3><p>Walks, runs, bike rides, flights and a phone jiggling in a parked car aren't logged. A ride that looks like a train or a bus, or a car that isn't one of yours (told apart by CarPlay or Bluetooth), is flagged for you to keep or mark Not a drive.</p></div>
+    <div class="card"><h3><span class="dot"></span>Your drives, your files</h3><p>Export every drive as CSV whenever you like, free. Save a backup file and restore it on any iPhone. Drives also move to a new iPhone with your iCloud or computer backup.</p></div>
+    <div class="card"><h3><span class="dot"></span>No account, no ads</h3><p>Nothing to sign up for or get logged out of. No ads, no analytics and no third-party code. Your locations and drives are processed and stored on your iPhone.</p></div>
+    <div class="card"><h3><span class="dot"></span>Diagnostics anyone can read</h3><p>See when iOS last woke Milebird, how long GPS ran today, an estimate of the battery it used, and every permission. Share the log with support in one tap.</p></div>
+  </div>
+</section>
+{SHOTS}
+<section class="wrap" id="detection">
+  <h2>How detection works, in plain words</h2>
+  <p class="muted">Milebird keeps the GPS off between drives and lets iOS tell it when you've moved. That's what makes automatic tracking cheap on battery.</p>
+  <ol class="steps">
+    <li><strong>Between drives, GPS is off.</strong> Milebird asks iOS to wake it when you leave a place: a small fence around where you parked (about 150 meters), iOS's significant-location changes and visits, and Motion &amp; Fitness noticing you're in a vehicle.</li>
+    <li><strong>It checks for up to three minutes.</strong> On a wake-up, GPS comes on and Milebird looks for vehicle speeds and in-car motion. A walk to the mailbox ends the check with no drive logged. Motion history puts the drive's start back to when you pulled away.</li>
+    <li><strong>While you drive, GPS records the route.</strong> Miles come from the track you actually drove, with bad fixes and jitter filtered out. If GPS drops in a tunnel, or iOS woke Milebird a little late, the missing stretch is drawn as a straight line and shown as estimated, never padded.</li>
+    <li><strong>At a stop, it waits.</strong> Shorter than the stop timeout (4 minutes by default, 1 to 15 in Settings, and longer while Motion says you're still sitting in the car), it's the same drive. Walk away from the car and the drive ends where you parked.</li>
+    <li><strong>The drive lands in your list.</strong> A few minutes after you park, ready for one tap. Nothing about it leaves your iPhone.</li>
+  </ol>
+  <div class="two">
+    <div class="card"><h3>Battery</h3><p>GPS runs only while Milebird checks a wake-up, while you drive and while you're stopped mid-drive. The rest of the time it waits on iOS's low-power wake-ups. Diagnostics shows the GPS time for each day, the app's own battery estimate (about 4% of a battery per hour of driving) and the measured battery level at the start and end of every drive.</p></div>
+    <div class="card honest"><h3>What it can't do</h3><p>iOS decides exactly when to wake an app. When it wakes Milebird late, the first stretch of the drive is an estimate, and it's labeled as one. Approximate Location can't measure miles, so Precise Location must stay on. And no app can log drives with Location turned off, so Milebird tells you the moment it is.</p></div>
+  </div>
+</section>
+
+<section class="wrap" id="pricing">
+  <h2>Free, and Milebird Pro</h2>
+  <p class="muted">Automatic tracking is free with no monthly cap. Pro is for the work done for you at volume and at tax time.</p>
+  <div class="table-wrap">
+    <table class="compare">
+      <thead><tr><th scope="col">Feature</th><th scope="col">Free</th><th scope="col">Pro</th></tr></thead>
+      <tbody>
+        <tr><td>Automatic drive detection, unlimited drives every month</td><td class="yes">Yes</td><td class="yes">Yes</td></tr>
+        <tr><td>Start or end a drive by hand, add a forgotten drive</td><td class="yes">Yes</td><td class="yes">Yes</td></tr>
+        <tr><td>See, sort, edit, split and join every drive you've logged</td><td class="yes">Yes</td><td class="yes">Yes</td></tr>
+        <tr><td>IRS rate by date, and what this month's business miles are worth</td><td class="yes">Yes</td><td class="yes">Yes</td></tr>
+        <tr><td>CSV export and a backup file, any time</td><td class="yes">Yes</td><td class="yes">Yes</td></tr>
+        <tr><td>Tracking-health alerts and Diagnostics</td><td class="yes">Yes</td><td class="yes">Yes</td></tr>
+        <tr><td>Vehicles</td><td>One</td><td>Several, with odometer readings</td></tr>
+        <tr><td>Auto-classify rules: work hours, named places, the IRS commute rule</td><td class="no">No</td><td class="yes">Yes</td></tr>
+        <tr><td>IRS-ready PDF log and employer reimbursement reports</td><td class="no">No</td><td class="yes">Yes</td></tr>
+        <tr><td>Clients and custom rates</td><td class="no">No</td><td class="yes">Yes</td></tr>
+        <tr><td>iCloud sync across your devices</td><td class="no">No</td><td class="yes">Yes</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="prices">
+    <div class="price main"><h3>Pro yearly</h3><p class="amount">$49.99 <span>a year</span></p><p>New subscribers get 14 days free first, with a reminder 2 days before the trial ends. Then $49.99 a year.</p></div>
+    <div class="price"><h3>Pro monthly</h3><p class="amount">$6.99 <span>a month</span></p><p>For a season or tax time. Cancel any month.</p></div>
+    <div class="price"><h3>Pro lifetime</h3><p class="amount">$119.99 <span>once</span></p><p>One payment for Pro, with no renewals.</p></div>
+  </div>
+  <div class="two">
+    <div class="card"><h3>Your drives never lock</h3><p>Every drive you log stays visible, editable and exportable whether you pay or not. If Pro ends, rules stop sorting new drives, but every drive, and every choice the rules already made, stays.</p></div>
+    <div class="card"><h3>Our price promise</h3><p>Subscribers keep the price they signed up at for as long as they stay subscribed. Lifetime is one payment, with no renewals. If the price ever changes for new buyers, the app says so 30 days ahead.</p></div>
+  </div>
+  <p class="muted">US prices; the App Store shows the price where you are. Billed by Apple, renews automatically until you cancel; cancel any time in Settings › your name › Subscriptions. See the <a href="terms.html">Terms of Use</a>.</p>
+</section>
+
+<section class="wrap" id="switch">
+  <h2>Switching from MileIQ, Everlance or Driversnote</h2>
+  <p class="muted">Several mileage apps changed their prices in 2026. These are the prices each charged on the US App Store on November 11, 2026, and the free plan its website described the same day.</p>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th scope="col">App</th><th scope="col">Monthly</th><th scope="col">Yearly</th><th scope="col">Free plan</th></tr></thead>
+      <tbody>
+        <tr><td>MileIQ</td><td>$13.99</td><td>$139.99</td><td>40 drives a month</td></tr>
+        <tr><td>Everlance Starter</td><td>$10.99</td><td>$89.99</td><td rowspan="2">30 automatic trips a month per user; manual trips unlimited</td></tr>
+        <tr><td>Everlance Professional</td><td>$19.99</td><td>$119.99</td></tr>
+        <tr><td>Driversnote</td><td>$14.00</td><td>$150.00</td><td>15 trips a month</td></tr>
+        <tr><td>Milebird Pro</td><td>$6.99</td><td>$49.99</td><td>Unlimited automatic drives; CSV export</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="muted">MileIQ's list price was $8.99 a month and $89.99 a year before its 2026 increase; PricingSaaS, which tracks pricing pages, recorded the new prices in its second-quarter 2026 snapshot (detected July 3, 2026). Everlance's pricing page also still shows older Starter prices of $8.99 a month and $69.99 a year. Driversnote's website lists Pro at $11 a month. Prices change: check each app's App Store page. Details and sources: <a href="mileiq-price-increase-alternatives.html">MileIQ's 2026 price increase and the alternatives</a>.</p>
+  <h3>How to move</h3>
+  <ol class="steps">
+    <li><strong>Download your history first.</strong> Export the reports or files you need from your current app for every year you may need them. The IRS generally expects you to keep records for 3 years after you file. Milebird doesn't import other apps' history yet, so keep those files with your tax records.</li>
+    <li><strong>Install Milebird and allow Location and Motion.</strong> Choose Always and keep Precise Location on, then allow Motion &amp; Fitness. Drives are logged from that moment, with nothing to sign up for.</li>
+    <li><strong>Run both for a week, if you like.</strong> Compare the drives and miles each one logs before you decide.</li>
+    <li><strong>Cancel the old subscription.</strong> If you pay through Apple: Settings › your name › Subscriptions. If you pay on the company's website, cancel there.</li>
+  </ol>
+</section>
+
+<section class="wrap" id="guides">
+  <h2>Guides to mileage records</h2>
+  <p class="muted">Plain answers about mileage logs and taxes, each linked to its official sources.</p>
+  {GUIDES}
+</section>
+
+<section class="wrap" id="faq">
+  <h2>Questions</h2>
+  <details><summary>Is Milebird free?</summary><p>Yes. Automatic tracking is free with no monthly cap: every drive is logged, and you can view, sort, edit and export every one as CSV, with no account. Milebird Pro adds auto-classify rules, IRS-ready PDF and reimbursement reports, several vehicles with odometer readings, clients and custom rates, and iCloud sync, for $6.99 a month, $49.99 a year (14 days free for new subscribers) or $119.99 once, in the US.</p></details>
+  <details><summary>Which IRS mileage rate does Milebird use?</summary><p>The rate in force on the date of each drive. For 2026 the IRS set the business rate at 72.5 cents a mile from January 1 and raised it to 76 cents for miles driven from July 1, 2026 (medical and moving: 20.5 cents, then 23.5; charity: 14 cents all year). So a drive on June 30 is valued at 72.5¢ and one on July 1 at 76¢. You can edit the table, or add a rate when the IRS announces a new one.</p></details>
+  <details><summary>How much battery does it use?</summary><p>Little between drives, because the GPS is off: iOS wakes Milebird when you move. GPS runs while Milebird checks a possible drive, while you drive and at stops during a drive. Diagnostics shows the GPS time for each day and the app's own estimate (about 4% of a battery per hour of driving), with the measured battery level at the start and end of each drive.</p></details>
+  <details><summary>Do my drives or my location leave my iPhone?</summary><p>No. Location and motion are processed on your iPhone, and your drives are stored there (and in your iPhone's own iCloud or computer backup). Milebird has no account, no server, no analytics and no third-party code. Maps of your drives are drawn with Apple Maps. See the <a href="privacy.html">privacy policy</a>.</p></details>
+  <details><summary>How do I export my drives?</summary><p>Settings › Your data › Export all drives (CSV) gives you every drive with its date, start and end times, from, to, miles, category, purpose, vehicle, rate and value. Send it to Mail, Files or your accountant. You can also save a backup file there and restore it on any iPhone. Both are free, always.</p></details>
+  <details><summary>How do I cancel Milebird Pro?</summary><p>Pro is billed by Apple. On your iPhone go to Settings › your name › Subscriptions › Milebird and cancel at least 24 hours before the current period ends. You keep every drive, and you can still export them all.</p></details>
+  <details><summary>Do I need an account?</summary><p>No. There's nothing to sign up for, so there's nothing to get logged out of. Open the app, allow Location and Motion &amp; Fitness, and drive.</p></details>
+  <details><summary>What if I ride as a passenger or take the train?</summary><p>Rides that look like a train or a bus, and rides in a car that isn't one of yours (Milebird tells your cars apart by their CarPlay or Bluetooth connection, once you mark them in Settings › My cars), are flagged for you. Keep the drive, or tap Not a drive to keep it out of your totals.</p></details>
+  <details><summary>Are drives between home and work business miles?</summary><p>Usually not. The IRS treats driving between home and your regular place of work as personal commuting, however far it is. Milebird's rules follow that, unless you tell it your home is your main place of business. See <a href="irs-mileage-log-requirements.html">what an IRS mileage log must show</a>.</p></details>
+  <details><summary>Does it work with no cell signal?</summary><p>Yes. GPS doesn't need a cell signal, and detection and logging happen on the iPhone with no internet. Only the street map behind a drive's route needs a connection to load.</p></details>
+  <details><summary>Which iPhones does it run on?</summary><p>iPhone with iOS 17 or later.</p></details>
+  <p>Something not working? The <a href="support.html">support page</a> covers permissions, Low Power Mode and exporting, or write to <span class="email">laddothis at gmail dot com</span>. A person answers, usually within one business day.</p>
+</section>

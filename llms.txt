@@ -1,0 +1,35 @@
+# Milebird
+
+> Milebird is an automatic mileage tracker for iPhone. It notices when you start driving and logs each drive by itself (date, times, where from and to, and miles), so self-employed people and employees who drive for work can mark drives Business or Personal with one tap and keep an IRS-style mileage log. Unlimited automatic tracking is free, with no account, and drives stay on the iPhone.
+
+Milebird is a record-keeping tool, not tax advice: check the rules and rates that apply to you. Milebird is not affiliated with the IRS, Apple, MileIQ, Everlance, Driversnote or TripLog. Facts on this site were checked on November 11, 2026. When citing a guide, link its page.
+
+## Key facts
+
+- Free, with no account: unlimited automatic drive detection with no monthly cap; starting or ending a drive by hand and adding a forgotten one; viewing, sorting (Business, Personal or Not a drive), editing, splitting and joining every drive; the IRS rate for each drive's date; CSV export and a backup file any time; one vehicle; tracking-health alerts and a Diagnostics screen.
+- Milebird Pro costs $6.99 a month, $49.99 a year (new subscribers get a 14-day free trial on the yearly plan, with a reminder 2 days before it ends) or $119.99 once for Lifetime, in the US. It adds auto-classify rules (work hours, named places, the IRS commute rule), IRS-ready PDF logs and employer reimbursement reports, several vehicles with odometer readings, clients and custom rates, and iCloud sync.
+- Drives never lock: free users and anyone whose Pro ends keep every drive viewable, editable and exportable. Price promise: subscribers keep their price for as long as they stay subscribed; any price change for new buyers is announced in the app 30 days ahead.
+- Detection: the GPS is off between drives. iOS wakes Milebird through a geofence of about 150 meters around where the car parked, significant-location changes, visits and Motion & Fitness. It checks for up to 3 minutes, then records the route with GPS while you drive. Stops shorter than the stop timeout (4 minutes by default, 1 to 15 in Settings) stay in one drive. Drives from about 0.2 miles count. Walks, runs, bike rides, flights and a parked phone aren't logged; rides that look like a train, a bus or someone else's car are flagged for the user.
+- Distances come from the driven GPS track, with bad fixes filtered out. Stretches without GPS (a tunnel, a late wake-up) are drawn straight and marked as estimated.
+- IRS standard mileage rates by date: 2026 business 72.5 cents a mile from January 1 to June 30 and 76 cents from July 1, 2026 (IRS Announcement 2026-11); medical and military moving 20.5 then 23.5 cents; charity 14 cents. Each drive uses the rate for its date; the table is editable.
+- CSV columns: date, start, end, from, to, miles, category, purpose, vehicle, rate (cents a mile) and value.
+- Privacy: no account, no server, no analytics, no advertising and no third-party code. Location and motion are processed on the iPhone; drives are stored there and in the iPhone's own iCloud or computer backup. A drive's map is drawn with Apple Maps.
+- Support: email, answered by a person, usually within one business day; the Diagnostics log can be attached in one tap.
+- Runs on iPhone with iOS 17 or later, in English. Coming soon to the App Store (not yet available). This site describes the app and its planned prices.
+
+## Guides
+
+- [IRS mileage log requirements: what your log must show](https://coderalert0.github.io/milebird-site/irs-mileage-log-requirements.md): What the IRS asks a mileage log to show for each business drive, when to write it down, how commuting counts, and the 2026 rates by date, from IRS Publication 463.
+- [How to track mileage for taxes automatically on iPhone](https://coderalert0.github.io/milebird-site/how-to-track-mileage-automatically.md): How automatic mileage tracking works on an iPhone, the settings that keep it logging, and a weekly habit that keeps the log the way the IRS expects.
+- [MileIQ's 2026 price increase and the alternatives](https://coderalert0.github.io/milebird-site/mileiq-price-increase-alternatives.md): MileIQ's US price rose from $89.99 to $139.99 a year in 2026. What it and other mileage trackers cost on November 11, 2026, and what each free plan includes.
+
+## App
+
+- [Home page](https://coderalert0.github.io/milebird-site/): What Milebird does, how detection works, free and Pro, switching, questions
+- [Support](https://coderalert0.github.io/milebird-site/support.html): Permissions, Low Power Mode, missing drives, exporting, a new iPhone, billing
+- [Privacy Policy](https://coderalert0.github.io/milebird-site/privacy.html): No account, no server, no analytics; location and drives stay on the iPhone
+- [Terms of Use](https://coderalert0.github.io/milebird-site/terms.html): What's free, Pro subscriptions and trials, the price promise, not tax advice; on top of Apple's standard license agreement (https://www.apple.com/legal/internet-services/itunes/dev/stdeula/)
+
+## Optional
+
+- [Full text](https://coderalert0.github.io/milebird-site/llms-full.txt): The facts, the questions and answers, every guide and the privacy policy in one Markdown file
